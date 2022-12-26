@@ -7,6 +7,8 @@ const path = require('path')
 const models = require('./models')
 const app = express()
 const cors = require('cors');
+const email_routes = require('./routes/email.routes')
+const header_routes = require('./routes/header.routes')
 
 
 var mysqlApostrophe = require("mysql-apostrophe")
@@ -18,6 +20,9 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(mysqlApostrophe);
 
+
+app.use('/api/emails', email_routes)
+app.use('/api/headers', header_routes)
 
 //Routes for handling specific requests
 
