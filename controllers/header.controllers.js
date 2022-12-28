@@ -17,6 +17,7 @@ exports.getHeaderDetails = (req, res) => {
 }
 
 exports.updateHeaderTitle = (req, res) => {
+   console.log(req.body)
     digilabs_header_section.update(
         {heading: req.body.heading},
         { where: {id : 1}}

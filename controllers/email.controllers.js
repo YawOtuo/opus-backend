@@ -3,7 +3,6 @@ const {digilabs_header_section} = require('../models')
 
 
 exports.getAllEmails = (req, res) => {
-
     digilabs_emails.findAll()
       .then((emails) =>
       {
@@ -16,8 +15,10 @@ exports.getAllEmails = (req, res) => {
 }
 
 exports.addEmail = (req, res) => {
+    console.log(req.body)
+
     digilabs_emails.create({
-        email: req.body.email
+        emails: req.body.email
     })
     .then((data)=>{
         res.send(data)
