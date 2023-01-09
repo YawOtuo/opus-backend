@@ -4,20 +4,20 @@
     "password": "",
     "database": "",
     "host": "",
-    "dialect": "mysql"
+    "dialect": ""
   },
   "test": {
     "username": "",
     "password": "",
     "database": "",
     "host": "",
-    "dialect": "mysql"
+    "dialect": ""
   },
   "production": {
     "username": "",
     "password": "",
     "database": "",
     "host": "",
-    "dialect": "mysql"
+    "dialect": ""
   }
 }
